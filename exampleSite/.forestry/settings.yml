@@ -3,10 +3,73 @@ new_page_extension: md
 auto_deploy: false
 admin_path: 
 webhook_url: 
-sections: 
-upload_dir: "./exampleSite/static/uploads"
-public_path: "/uploads"
+sections:
+- type: directory
+  path: exampleSite/content
+  label: Pages
+  create: all
+  match: "*"
+- type: directory
+  path: exampleSite/content/template-example
+  label: Template example
+  create: all
+  match: "**/*"
+- type: directory
+  path: exampleSite/content/section-example
+  label: Section example
+  create: all
+  match: "**/*"
+- type: directory
+  path: exampleSite/content/plugin-example
+  label: Plugin example
+  create: all
+  match: "**/*"
+- type: directory
+  path: exampleSite/content/logo-example
+  label: Logo example
+  create: all
+  match: "**/*"
+- type: directory
+  path: exampleSite/content/hugo-hl-example
+  label: Hugo hl example
+  create: all
+  match: "**/*"
+- type: directory
+  path: exampleSite/content/home
+  label: Home
+  create: all
+  match: "**/*"
+- type: directory
+  path: exampleSite/content/highlightjs-linenumbers-example
+  label: Highlightjs linenumbers example
+  create: all
+  match: "**/*"
+- type: directory
+  path: exampleSite/content/extending-layout-example
+  label: Extending layout example
+  create: all
+  match: "**/*"
+- type: directory
+  path: exampleSite/content/custom-theme-example
+  label: Custom theme example
+  create: all
+  match: "**/*"
+- type: directory
+  path: exampleSite/content/bundle-example
+  label: Bundle example
+  create: all
+  match: "**/*"
+upload_dir: "./exampleSite/static/images"
+public_path: "/images"
 front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"
+build:
+  preview_env:
+  - HUGO_ENV=staging
+  - HUGO_VERSION=0.71.1
+  preview_output_directory: public
+  preview_docker_image: forestryio/hugo:latest
+  mount_path: "/srv"
+  instant_preview_command: hugo server -D -E -F --renderToDisk -d public
 version: 0.38.1
