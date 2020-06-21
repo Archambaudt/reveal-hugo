@@ -17,6 +17,6 @@ background = "#FF7740"
 
 # Thomas Archambaud
 
-Lead Product Manager @ Paris
+Lead Product Manager @MesDocteurs
 
-~ (https://thomasarchambaud.com) ~
+~Made with love, check our site (https://mesdocteurs.com) ~
