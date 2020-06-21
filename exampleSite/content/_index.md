@@ -13,10 +13,10 @@ class = "hotpink"
 background = "#FF4081"
 +++
 
-# 📽️
+# 👇
 
-# reveal-hugo
+# Thomas Archambaud
 
-A Hugo theme for creating Reveal.js presentations.
+Lead Product Manager @ Paris
 
-~ made by [@dzello](https://dzello.com/) ~
+~ (https://thomasarchambaud.com) ~
