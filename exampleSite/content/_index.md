@@ -1,6 +1,6 @@
 +++
-title = "reveal-hugo"
-description = "A Hugo theme for creating Reveal.js presentations"
+title = "Thomas Archambaud | Test de présentation"
+description = "Ceci est un test de présentation interactive, possiblement utilisable comme un CV en ligne mais aussi comme d'une démo commmerciale sur un produit."
 outputs = ["Reveal"]
 [reveal_hugo]
 custom_theme = "reveal-hugo/themes/robot-lung.css"
@@ -10,7 +10,7 @@ transition = "slide"
 transition_speed = "fast"
 [reveal_hugo.templates.hotpink]
 class = "hotpink"
-background = "#FF4081"
+background = "#FF7740"
 +++
 
 # 👇
